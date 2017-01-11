@@ -15,8 +15,8 @@ var mountainClimber = {
             ]
         },
     ],
-    ageOneYear: function () {
-        age++;
+    ageOneYear: function() {
+        this.age++;
         return this.age;
     }
 }
@@ -66,4 +66,4 @@ console.log(mountainClimber.mountainClimbingFriends[1]);
 console.log(mountainClimber.mountainClimbingFriends[2]);
 
 console.log(mountainClimber.age);
-console.log(mountainClimber.ageOneYear);
+console.log(mountainClimber.ageOneYear());
