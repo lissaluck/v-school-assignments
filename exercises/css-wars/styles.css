@@ -1,0 +1,35 @@
+body {
+    background-color: #111111;
+}
+
+h1 {
+    color: #e2e80f;
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    color: #eeeeee;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+span.credits {
+    text-decoration: underline;
+    color: #49daff;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+span.credits:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+#film-description {
+    font-size: 0.8em;
+    font-style: italic;
+}
