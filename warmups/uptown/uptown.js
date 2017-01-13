@@ -4,7 +4,7 @@ var lyrics = ["This", "hit", "that", "ice", "cold", "Michelle", "Pfeiffer", "tha
 //function printArray(lyricArray) {
 //    console.log(lyricArray.join(" "));
 //}
-
+//
 function printArray(lyricArray) {
     var lyricString = "";
     for (var i = 0; i < lyricArray.length ; i++) {
@@ -15,6 +15,7 @@ function printArray(lyricArray) {
 
 printArray(lyrics);
 
+/* with join method */
 //function reversePrint(lyricArray) {
 //    lyricArray.reverse();
 //    console.log(lyricArray.join(" "));
@@ -41,3 +42,13 @@ function printEvens(lyricArray) {
 }
 
 printEvens(lyrics);
+
+function jumbleArray(lyricArray) {
+    var lyricString = "";
+    for (var i = 1; i < lyricArray.length + 1 ; i += 2) {
+        lyricString += lyricArray[i] + " " + lyricArray[i - 1] + " ";
+    }
+    console.log(lyricString);
+}
+
+jumbleArray(lyrics);
