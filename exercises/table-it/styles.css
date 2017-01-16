@@ -1,0 +1,16 @@
+table {
+    font-family: sans-serif;
+    font-size: 2em;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+th {
+    background-color: red;
+    color: white;
+}
+
+td {
+    border: 3px dotted red;
+    padding: 5px;
+}

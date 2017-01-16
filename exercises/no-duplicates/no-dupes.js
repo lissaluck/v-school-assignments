@@ -20,7 +20,7 @@ function noDupes(string) {
 noDupes("bookkeeper Larry");
 //noDupes("Hello world, welcome to the universe.");
 
-
+/* Exercise instructions */
 //input
 //var input = 'bookkeeper larry';
 
@@ -28,6 +28,7 @@ noDupes("bookkeeper Larry");
 // No duplicates: 'bokepr lay'
 // The Misfits: 'okeerr'
 
+/* Where I started */
 //
 //function removeDupes(str) {
 //    var str = str.toLowerCase();
@@ -46,6 +47,8 @@ noDupes("bookkeeper Larry");
 //
 //removeDupes("Melissa Luckett");
 //
+
+/* Solution with pseudo code / explanations */
 //function noDupes(string) {
 //    // lowercase letters
 //    string = string.toLowerCase();
