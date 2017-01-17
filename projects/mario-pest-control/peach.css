@@ -110,3 +110,41 @@ footer {
     padding: 5px 10px 5px 10px;
     font-size: 0.8em;
 }
+
+@media screen and (max-width: 400px) {
+    h1 {
+        display: inline;
+        font-size: 2.25em;
+        background: -webkit-linear-gradient(white, deeppink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: '../fonts/New-Super-Mario-Font-U', Arial;
+    }
+    .btn {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    table {
+        width: 100%;
+        font-size: 1.1em;
+        font-family: cursive;
+        opacity: 0.85;
+        background-color: white;
+        color: deeppink;
+        text-align: center;
+    }
+    .pest-name {
+        font-size: 1em;
+    }
+    .footer_text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,10 @@
+div {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+}
+
+p {
+    display: inline-block;
+    padding-right: 20px;
+}
