@@ -1,3 +1,9 @@
+@font-face {
+    font-family: '../fonts/New-Super-Mario-Font-U';
+    src: url('../fonts/New-Super-Mario-Font-U.ttf.woff') format('woff'), url('../fonts/New-Super-Mario-Font-U.ttf.svg#../fonts/New-Super-Mario-Font-U') format('svg'), url('../fonts/New-Super-Mario-Font-U.ttf.eot'), url('../fonts/New-Super-Mario-Font-U.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     background: url(https://s-media-cache-ak0.pinimg.com/originals/e9/c1/bb/e9c1bbcfd2914ba376901a9cf5782d2f.jpg);
@@ -5,41 +11,40 @@ body {
     background-size: 100%;
 }
 
-
 header {
     background-color: white;
-    padding: 5px 5px 5px 25px;
+    padding-left: 25px;
 }
 
-
 .btn {
-  background: red;
-  background-image: -webkit-linear-gradient(top, red, hotpink);
-  background-image: -moz-linear-gradient(top, red, hotpink);
-  background-image: -ms-linear-gradient(top, red, hotpink);
-  background-image: -o-linear-gradient(top, red, hotpink);
-  background-image: linear-gradient(to bottom, red, hotpink);
-  -webkit-border-radius: 15;
-  -moz-border-radius: 15;
-  border-radius: 15px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 0.75em;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
+    background: red;
+    background-image: -webkit-linear-gradient(top, red, crimson);
+    background-image: -moz-linear-gradient(top, red, crimson);
+    background-image: -ms-linear-gradient(top, red, crimson);
+    background-image: -o-linear-gradient(top, red, crimson);
+    background-image: linear-gradient(to bottom, red, crimson);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 0.75em;
+    padding: 5px 25px 5px 25px;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
 .btn:hover {
-  background: hotpink;
-  background-image: -webkit-linear-gradient(top, hotpink, red);
-  background-image: -moz-linear-gradient(top, hotpink, red);
-  background-image: -ms-linear-gradient(top, hotpink, red);
-  background-image: -o-linear-gradient(top, hotpink, red);
-  background-image: linear-gradient(to bottom, hotpink, red);
-  text-decoration: none;
+    background: crimson;
+    background-image: -webkit-linear-gradient(top, crimson, red);
+    background-image: -moz-linear-gradient(top, crimson, red);
+    background-image: -ms-linear-gradient(top, crimson, red);
+    background-image: -o-linear-gradient(top, crimson, red);
+    background-image: linear-gradient(to bottom, crimson, red);
+    text-decoration: none;
 }
 
-.greeting {
+.message {
     font-family: sans-serif;
     background-color: white;
     color: red;
@@ -54,7 +59,7 @@ h1 {
     background: -webkit-linear-gradient(white, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: cursive;
+    font-family: '../fonts/New-Super-Mario-Font-U', Arial;
 }
 
 img {
@@ -65,11 +70,12 @@ img {
 table {
     margin-left: auto;
     margin-right: auto;
-    font-size 5em;
+    font-size: 1.3em;
     font-family: cursive;
     opacity: 0.85;
     background-color: white;
     color: red;
+    text-align: center;
 }
 
 th {
@@ -82,16 +88,25 @@ td {
     padding: 10px;
 }
 
+.pest-name {
+    font-size: 1.5em;
+}
+
+.total {
+    text-align: right;
+}
+
 footer {
     background-color: red;
     color: white;
     text-align: center;
     width: 100%;
     line-height: 1.5em;
+    font-family: sans-serif;
 }
 
 .footer_text {
     width: 30%;
     padding: 5px 10px 5px 10px;
-    font-size: 0.85em;
+    font-size: 0.8em;
 }

@@ -1,43 +1,50 @@
+@font-face {
+    font-family: '../fonts/New-Super-Mario-Font-U';
+    src: url('../fonts/New-Super-Mario-Font-U.ttf.woff') format('woff'), url('../fonts/New-Super-Mario-Font-U.ttf.svg#../fonts/New-Super-Mario-Font-U') format('svg'), url('../fonts/New-Super-Mario-Font-U.ttf.eot'), url('../fonts/New-Super-Mario-Font-U.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background: url(http://orig07.deviantart.net/daa0/f/2014/282/b/e/nintendo__princess_peach_wallpaper_by_mikedarko-d825kzj.png);
     background-position: right top;
     background-size: 100%;
 }
 
-
 header {
     background-color: white;
+    padding-left: 25px;
 }
 
-
 .btn {
-  background: deeppink;
-  background-image: -webkit-linear-gradient(top, deeppink, hotpink);
-  background-image: -moz-linear-gradient(top, deeppink, hotpink);
-  background-image: -ms-linear-gradient(top, deeppink, hotpink);
-  background-image: -o-linear-gradient(top, deeppink, hotpink);
-  background-image: linear-gradient(to bottom, deeppink, hotpink);
-  -webkit-border-radius: 15;
-  -moz-border-radius: 15;
-  border-radius: 15px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 0.75em;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
+    background: deeppink;
+    background-image: -webkit-linear-gradient(top, deeppink, hotpink);
+    background-image: -moz-linear-gradient(top, deeppink, hotpink);
+    background-image: -ms-linear-gradient(top, deeppink, hotpink);
+    background-image: -o-linear-gradient(top, deeppink, hotpink);
+    background-image: linear-gradient(to bottom, deeppink, hotpink);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 0.75em;
+    padding: 5px 25px 5px 25px;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
 .btn:hover {
-  background: hotpink;
-  background-image: -webkit-linear-gradient(top, hotpink, deeppink);
-  background-image: -moz-linear-gradient(top, hotpink, deeppink);
-  background-image: -ms-linear-gradient(top, hotpink, deeppink);
-  background-image: -o-linear-gradient(top, hotpink, deeppink);
-  background-image: linear-gradient(to bottom, hotpink, deeppink);
-  text-decoration: none;
+    background: hotpink;
+    background-image: -webkit-linear-gradient(top, hotpink, deeppink);
+    background-image: -moz-linear-gradient(top, hotpink, deeppink);
+    background-image: -ms-linear-gradient(top, hotpink, deeppink);
+    background-image: -o-linear-gradient(top, hotpink, deeppink);
+    background-image: linear-gradient(to bottom, hotpink, deeppink);
+    text-decoration: none;
 }
 
-.greeting {
+.message {
     font-family: sans-serif;
     background-color: white;
     color: deeppink;
@@ -52,7 +59,7 @@ h1 {
     background: -webkit-linear-gradient(white, deeppink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: cursive;
+    font-family: '../fonts/New-Super-Mario-Font-U', Arial;
 }
 
 img {
@@ -63,11 +70,12 @@ img {
 table {
     margin-left: auto;
     margin-right: auto;
-    font-size 5em;
+    font-size: 1.3em;
     font-family: cursive;
     opacity: 0.85;
     background-color: white;
     color: deeppink;
+    text-align: center;
 }
 
 th {
@@ -80,6 +88,10 @@ td {
     padding: 10px;
 }
 
+.pest-name {
+    font-size: 1.5em;
+}
+
 .total {
     text-align: right;
 }
@@ -90,10 +102,11 @@ footer {
     text-align: center;
     width: 100%;
     line-height: 1.5em;
+    font-family: sans-serif;
 }
 
 .footer_text {
     width: 30%;
     padding: 5px 10px 5px 10px;
-    font-size: 0.85em;
+    font-size: 0.8em;
 }

@@ -3,8 +3,8 @@ function swapStyleSheet(sheet) {
 }
 
 function initate() {
-    var style1 = document.getElementById("stylesheet1");
-    var style2 = document.getElementById("stylesheet2");
+    var style1 = document.getElementById("stylesheet-peach");
+    var style2 = document.getElementById("stylesheet-mario");
 
     style1.onclick = function () {
         swapStyleSheet("peach.css")
