@@ -1,0 +1,97 @@
+
+body {
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/e9/c1/bb/e9c1bbcfd2914ba376901a9cf5782d2f.jpg);
+    background-position: right top;
+    background-size: 100%;
+}
+
+
+header {
+    background-color: white;
+    padding: 5px 5px 5px 25px;
+}
+
+
+.btn {
+  background: red;
+  background-image: -webkit-linear-gradient(top, red, hotpink);
+  background-image: -moz-linear-gradient(top, red, hotpink);
+  background-image: -ms-linear-gradient(top, red, hotpink);
+  background-image: -o-linear-gradient(top, red, hotpink);
+  background-image: linear-gradient(to bottom, red, hotpink);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 0.75em;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: hotpink;
+  background-image: -webkit-linear-gradient(top, hotpink, red);
+  background-image: -moz-linear-gradient(top, hotpink, red);
+  background-image: -ms-linear-gradient(top, hotpink, red);
+  background-image: -o-linear-gradient(top, hotpink, red);
+  background-image: linear-gradient(to bottom, hotpink, red);
+  text-decoration: none;
+}
+
+.greeting {
+    font-family: sans-serif;
+    background-color: white;
+    color: red;
+    padding: 5px 5px 5px 25px;
+    opacity: 0.75;
+    font-size: 0.9em;
+}
+
+h1 {
+    display: inline;
+    font-size: 4em;
+    background: -webkit-linear-gradient(white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: cursive;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size 5em;
+    font-family: cursive;
+    opacity: 0.85;
+    background-color: white;
+    color: red;
+}
+
+th {
+    background-color: red;
+    color: white;
+}
+
+td {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.footer_text {
+    width: 30%;
+    padding: 5px 10px 5px 10px;
+    font-size: 0.85em;
+}

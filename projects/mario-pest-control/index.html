@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mario Pest Control</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mario Pest Control -- Mushroom Kingdom</title>
+    <script type="application/javascript" src="style-script.js"></script>
+    <link id="pagestyle" rel="stylesheet" href="peach.css">
 </head>
 
 <body>
     <header>
-        <h1>Header font</h1>
+        <h1>Mario Pest Control</h1>
     </header>
+    <button class="btn" id="stylesheet1"> Peach Style Sheet </button>
+        <button class="btn" id="stylesheet2"> Mario Style Sheet </button>
     <div class="greeting">
         <p>My Dearest Peach,</p>
         <p>I have made a page for your invoice. Though I'd love to do this work for you gratis, I need mustache wax!</p>
@@ -19,36 +22,46 @@
     </div>
     <table>
         <tr>
-            <th>Picture</th>
-            <th>Name</th>
-            <th>How many:</th>
-            <th>How much:</th>
+            <th>Pest Picture</th>
+            <th>Pest Name</th>
+            <th>Price</th>
+            <th>How many?</th>
+            <th>Total Cost</th>
         </tr>
         <tr>
-            <td>image</td>
-            <td>goombas</td>
-            <td>Total caught:</td>
-            <td>Total Price:</td>
+            <td><img src="http://vignette4.wikia.nocookie.net/nintendo/images/2/2a/New_Super_Mario_Bros_Wii_Goomba.jpeg/revision/latest?cb=20121207200144&path-prefix=en" alt="Goomba"></td>
+            <td>Goombas</td>
+            <td>Price: 5 Coins</td>
+            <td>Total caught: 12</td>
+            <td>Total Price: 60 Coins</td>
         </tr>
         <tr>
-            <td>image</td>
-            <td>bob-ombs</td>
-            <td>Total caught:</td>
-            <td>Total Price:</td>
+            <td><img src="http://static3.comicvine.com/uploads/square_small/11/111746/4310580-bobombnsmbu.jpg" alt="Bob-ombs"></td>
+            <td>Bob-ombs</td>
+            <td>Price: 7 Coins</td>
+            <td>Total caught: 8</td>
+            <td>Total Price: 56 Coins</td>
         </tr>
         <tr>
-            <td>image</td>
-            <td>Cheep-cheeps:</td>
-            <td>Total caught:</td>
-            <td>Total Price:</td>
+            <td><img src="http://1.bp.blogspot.com/_tG4cOxUC0UU/TQoQTU3PznI/AAAAAAAAAs4/Octkj9HZRKw/s320/600px-cheep_cheep.jpg" alt="Cheep-Cheeps"></td>
+            <td>Cheep-cheeps</td>
+            <td>Price: 11 coins</td>
+            <td>Caught: 5</td>
+            <td>Total for Cheep-cheeps: 55 Coins</td>
+        </tr>
+        <tr>
+            <td colspan="5" class="total">Total Price: </td>
         </tr>
     </table>
+    
 
     <footer>
         <span class="footer_text">Mario@Nintendo.com</span>
-        <span class="footer_text">SuperBrosPlumbing.com</span>
+        <span class="footer_text">SuperBros.com</span>
         <span class="footer_text">Brooklyn, NY 11201</span>
     </footer>
+    
+    <script type="application/javascript" src="math-script.js"></script>
 </body>
 
 </html>
