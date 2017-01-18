@@ -1,7 +1,7 @@
 body {
     background-color: #333333;
     margin: 0;
-    padding: 0;
+    margin-bottom: 75px;
     height: 100%;
 }
 
@@ -54,7 +54,6 @@ img {
 }
 
 footer {
-    clear: both;
     position: fixed;
     bottom: 0;
     background-color: #555555;
@@ -75,6 +74,5 @@ footer p {
     position: absolute;
     left: 0px;
     padding: 10px;
-    top: 100px;
-    
+    top: 100px;  
 }

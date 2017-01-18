@@ -1,0 +1,50 @@
+nav {
+    width: 100%;
+    background-color: burlywood;
+    position: fixed;
+    top: 0;
+}
+
+main {
+    margin-top: 95px;
+}
+
+nav p {
+    font-family: sans-serif;
+    font-size: 1.7em;
+    display: inline-block;
+    color: saddlebrown;
+    padding-left: 20px;
+}
+
+img {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    max-height: 175px;
+}
+
+.post {
+    width: 65%;
+    background-color: beige;
+    margin-bottom: 25px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: saddlebrown;
+}
+
+.date {
+    font-family: serif;
+    float: right;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-right: 5px;
+    margin-top: 10px;
+}
