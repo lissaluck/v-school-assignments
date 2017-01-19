@@ -18,6 +18,7 @@ function noDupes(string) {
 }
 
 noDupes("bookkeeper Larry");
+
 //noDupes("Hello world, welcome to the universe.");
 
 /* Exercise instructions */
