@@ -16,7 +16,7 @@ function determineHitPoints(type) {
     if (type === "Ancient Dragon") {
         return Math.floor(Math.random() * (100 - 80 + 1)) + 80;
     } else if (type === "Prowler") {
-        return Math.floor(Math.random() * (79 - 50 + 1)) + 50;;
+        return Math.floor(Math.random() * (79 - 50 + 1)) + 50;
     } else if (type === "Mighty Grunt") {
         return Math.floor(Math.random() * (49 - 20 + 1)) + 20;
     }
