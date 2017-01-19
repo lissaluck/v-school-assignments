@@ -19,7 +19,7 @@ function largest(num1, num2, num3) {
 //console.log(largest(8, 9, 10));
 //console.log(largest(11, 13, 12));
 
-function oddEven(num) {
+var oddEven = function (num) {
     if (num % 2 === 1) {
         return "odd";
     } else {
@@ -60,23 +60,23 @@ function frequentChar(str) {
     // compare the counts to find the largest
     
 }
-
-function noDupes(str) {
-    str = str.toLowerCase();
-    var uniques = "";
-    var misfits = "";
-    for (var i = 0; i < str.length; i++) {
-        if (uniques.indexOf(str[i]) !== -1) {
-            misfits += str[i];
-        } else {
-            uniques += str[i];
-        }
-    }
-    console.log("Uniques: " + uniques);
-    console.log("Extras: " + misfits);
-    
-    var arr = uniques.split("");
-    console.log(arr.sort().join(""));
-}
-
-noDupes("bookkeeper Larry");
+//
+//function noDupes(str) {
+//    str = str.toLowerCase();
+//    var uniques = "";
+//    var misfits = "";
+//    for (var i = 0; i < str.length; i++) {
+//        if (uniques.indexOf(str[i]) !== -1) {
+//            misfits += str[i];
+//        } else {
+//            uniques += str[i];
+//        }
+//    }
+//    console.log("Uniques: " + uniques);
+//    console.log("Extras: " + misfits);
+//    
+//    var arr = uniques.split("");
+//    console.log(arr.sort().join(""));
+//}
+//
+//noDupes("bookkeeper Larry");
