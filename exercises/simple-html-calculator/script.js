@@ -1,42 +1,37 @@
-//function add(num1, num2) {
-//    return num1 + num2;
-//}
-//
-//function subtract(num1, num2) {
-//    return num1 - num2;
-//}
-//
-//function multiply(num1, num2) {
-//    return num1 * num2;
-//}
-//
-//Number("30");
-//parseInt("30");
-//parseFloat("3.14");
+var form = document.getElementById("calculator");
 
-/* From Eric */
-//javascript
-//long broken down into bite sized peices (better)
+document.getElementById("add-button").addEventListener("click", function () {
+    var value1 = form.elements["first-add"].value;
+    var value2 = form.elements["second-add"].value;
 
-var addSubmit = document.getElementById("submit-add");
-
-addSubmit.addEventListener("click", function(){
-    var value1 = document.getElementById("add-input-1").value;
-    var value2 = document.getElementById("add-input-2").value;
-    
     value1 = parseInt(value1);
     value2 = parseInt(value2);
-    
+
     var total = value1 + value2;
     
-    var output = document.getElementById("add-output");
-    
-    output.textContent = total;
-})
+    form.elements["add-result"].value = total;
+});
 
-//
-////less lines. Annoying, but fun
-//
-//document.getElementById("submit-add").addEventListener("click", function(){
-//    document.getElementById("add-output").textContent = parseInt(document.getElementById("add-input-1").value) + parseInt(document.getElementById("add-input-2").value);
-//})
+document.getElementById("subtract-button").addEventListener("click", function () {
+    var value1 = form.elements["first-subtract"].value;
+    var value2 = form.elements["second-subtract"].value;
+
+    value1 = parseInt(value1);
+    value2 = parseInt(value2);
+
+    var total = value1 - value2;
+    
+    form.elements["subtract-result"].value = total;
+});
+
+document.getElementById("multiply-button").addEventListener("click", function () {
+    var value1 = form.elements["first-multiply"].value;
+    var value2 = form.elements["second-multiply"].value;
+
+    value1 = parseInt(value1);
+    value2 = parseInt(value2);
+
+    var total = value1 * value2;
+    
+    form.elements["multiply-result"].value = total;
+});

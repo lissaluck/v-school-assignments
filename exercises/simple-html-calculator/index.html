@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Simple HTML Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   <script src="script.js"></script> 
+    <form id="calculator">
+        <div class="instructions">Here are three simple calculators for you. Enter your numbers, then press the button for your result. Enjoy!</div>
+        <div class="add">
+            Add <br>
+            <label for=""></label>
+            <input type="number" name="first-add" value=0>
+            <br>
+            <button type="button" name="add-submit" id="add-button">+</button>
+            <label for=""></label>
+            <input type="number" name="second-add" value=0>
+            <br>
+            <hr>
+            <label for=""></label>
+            <input type="number" name="add-result" value=0>
+            <br>
+        </div>
+
+        <div class="subtract">
+            Subtract <br>
+            <label for=""></label>
+            <input type="number" name="first-subtract" value=0>
+            <br>
+            <button type="button" nam="subtract-submit" id="subtract-button">-</button>
+            <label for=""></label>
+            <input type="number" name="second-subtract" value=0>
+            <br>
+            <hr>
+            <label for=""></label>
+            <input type="number" name="subtract-result" value=0>
+            <br>
+        </div>
+
+        <div class="multiply">
+            Multiply <br>
+            <label for=""></label>
+            <input type="number" name="first-multiply" value=0>
+            <br>
+            <button type="button" name="submit-multiply" id="multiply-button">x</button>
+            <label for=""></label>
+            <input type="number" name="second-multiply" value=0>
+            <br>
+            <hr>
+            <label for=""></label>
+            <input type="number" name="multiply-result" value=0>
+            <br>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
