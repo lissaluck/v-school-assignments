@@ -1,0 +1,1 @@
+Using JS to write eventlisteners for a basic calculator, that will add, subtract, and multiply. Uses CSS to style it nicely for the end user.

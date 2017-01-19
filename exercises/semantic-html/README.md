@@ -1,0 +1,1 @@
+Writing a static webpage using semantic-html. Practicing headers, nav bars, main content, and footer.

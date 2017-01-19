@@ -1,0 +1,1 @@
+Practicing the use of CSS to layout web pages. Learning about floats and display attributes.

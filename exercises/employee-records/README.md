@@ -1,0 +1,1 @@
+This exercise is focused on constructor functions, working with arays, methods, and instantiating new objects.

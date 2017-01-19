@@ -1,0 +1,1 @@
+Mostly performing math logic questions using functions and getting comfortable with the two different types of function declarations.

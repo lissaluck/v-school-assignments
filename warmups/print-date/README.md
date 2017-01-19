@@ -1,0 +1,1 @@
+This was focused on how to use bult-in functions of JavaScript to output time and day.

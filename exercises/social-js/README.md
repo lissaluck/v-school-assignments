@@ -1,0 +1,1 @@
+Created a model to represent the database of a social media platform. Used nested data, objects and arrays, and methods.

@@ -1,0 +1,1 @@
+Practice creating tables in HTML, using the Emmet plug-in for Brackets to be more efficient in coding, and styling tables with CSS.

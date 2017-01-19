@@ -1,0 +1,1 @@
+This is practice in writing objects and adding properties and methods to them.

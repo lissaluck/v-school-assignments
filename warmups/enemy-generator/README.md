@@ -1,0 +1,1 @@
+This exercise used constructor funcions to generate enemies for a game. It required the use of helper functions to randomly generate the object properties of each enemy created. I then re-used this code to generate enemies for my console RPG Colossal Adventure.

@@ -1,0 +1,1 @@
+This is an example of some of the basic functions of Bootstrap. I used it to explore glyphicons, nav layout, and button styles. 

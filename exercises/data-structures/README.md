@@ -1,0 +1,1 @@
+This was an exercise is creating objects and giving them properties of differetn data types.

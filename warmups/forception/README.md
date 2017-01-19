@@ -1,0 +1,1 @@
+This was exploring how to use a loop within a loop for a combined output from two arrays

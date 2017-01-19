@@ -1,0 +1,1 @@
+This was an exercise in using CSS selectors to restyle elements on a page.

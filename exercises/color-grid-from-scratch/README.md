@@ -1,0 +1,1 @@
+This is a revised color grid that uses CSS media queries to alter the layout when the screen reaches a phone size.

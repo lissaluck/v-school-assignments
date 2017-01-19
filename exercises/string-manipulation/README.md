@@ -1,0 +1,1 @@
+Used the NodeJS package readline-sync to creat an interactive program that asks the user for information and reports back on what is entered.

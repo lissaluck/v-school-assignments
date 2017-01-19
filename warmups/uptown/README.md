@@ -1,0 +1,1 @@
+This is a program using array methods to affect change on an array's output.

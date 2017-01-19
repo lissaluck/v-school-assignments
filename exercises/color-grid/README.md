@@ -1,0 +1,1 @@
+This exercise used CSS stylesheets to create a color grid. I used classes to create a responsive layout of colored boxes.

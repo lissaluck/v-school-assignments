@@ -1,0 +1,1 @@
+This project required the use of HTMl and external CSS stylesheets and JavaScript file. It was required to be responsive (specifically that it looked good sized down for a smart phone). I included two different stylesheets, using a script to switch between the two looks at the press of a button.

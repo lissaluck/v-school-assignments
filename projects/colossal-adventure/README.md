@@ -1,0 +1,1 @@
+This project uses the console to play out an RPG coded in JS. It required readline funcitons to interact with the player. It used random number generation to determine outcomes. It keeps a record of HP, and inventory for the player and allows them to print out their detials.

@@ -1,0 +1,1 @@
+This was an exercise in CSS styling, including "sticky" navigation and blog post styling.
