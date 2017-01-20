@@ -1,0 +1,1 @@
+This is a re-creation of the color-grid layout using bootstrap's responsive color grid system.

@@ -1,0 +1,28 @@
+* {
+    border: 5px solid white;
+    height: 125px;
+}
+
+.container {
+    width: 90%;
+}
+
+#light-pink {
+    background-color: #f5c6d6;
+}
+
+#pink {
+    background-color: #ee2e84;
+}
+
+#blue {
+    background-color: #85cfd8;
+}
+
+#green {
+    background-color: #8dc63f;
+}
+
+#orange {
+    background-color: #e76e34;
+}
