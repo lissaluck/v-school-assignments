@@ -1,0 +1,1 @@
+This is a console program that ciphers (encrypts) a string. It takes a string input and a shift value, and outputs a string shifted by a given number of characters.
