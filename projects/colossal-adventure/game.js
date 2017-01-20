@@ -13,21 +13,20 @@ var walk = readline.question("Press 'w' to walk! " );
 
 /* "max" is inclusive */
 function getRandomInt(min, max) {
-    Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 //Every time the player walks, a random algorithm will be run that determines
 //if a wild enemy has appeared(A 1 / 3 or 1 / 4 chance of being attacked)
-var walking = getRandomInt(0, 3);
-console.log(walking);
+var walking = getRandomInt(1, 4);
 
 if (walk === "w") {
 //    console.log("You're walking!");
-    if (walking === 0) {
+    if (walking === 1) {
         readline.keyIn("The coast is clear! Press 'w' to walk again.");
-    } else if (walking === 1) {
+    } else if (walking === 2) {
         console.log("Number 1");
-    } else if (walking = 2) {
+    } else if (walking === 3) {
         console.log("Number 2");
     } else {
         console.log("Number 3");
