@@ -1,0 +1,167 @@
+{
+    "salads": [
+        {
+            "name": "Chicken Club Salad",
+            "calories": "500",
+            "ingredients": ["Chicken breast", "grape tomatoes", "sliced avocado", "cheddar", "Asiago", "bacon", "mixed salad greens"],
+            "price": "$8.69"
+
+        },
+        {
+            "name": "The Big Chef",
+            "calories": "420",
+            "ingredients": ["ham", "roasted turkey breast", "Asiago", "cheddar", "grape tomatoes", "kalamata olives", "hard-boiiled eggs", "mixed salad greens"],
+            "price": "$7.69"
+
+        },
+        {
+            "name": "Chicken Caesar",
+            "calories": "680",
+            "ingredients": ["Chicken breast", "romaine", "Asiago", "croutons", "creamy Caesar dressing"],
+            "served with": "toasted herb focaccia bread",
+            "price": "$8.69"
+
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "The Papa Joe",
+            "calories": "580",
+            "description": "Dedicated to our Founder's Dad. Roasted turkey breast, Asiago, roasted tomatoes, fresh basil pesto, mayo, toasted on herb focaccia bread.",
+            "price": "$7.29"
+        },
+        {
+            "name": "Santa Fe Chicken Sandwich",
+            "calories": "660",
+            "description": "Grilled, 100% antibiotic-free chicken breast, bacon, Swiss, guacamole, tomato. Thousand Island dressing, grilled on multigrain wheat. ",
+            "price": "$7.29"
+        },
+        {
+            "name": "Amy's Turkey-O",
+            "calories": "480",
+            "description": " Roasted turkey breast, sliced avocado, jalapeño pepper jack, red onions, Roma tomatoes, leafy lettuce, stone-ground mustard, on a toasted onion bun. ",
+            "price": "$5.79"
+        },
+        {
+            "name": "Chicken Salad Croissant",
+            "calories": "670",
+            "description": "Our famous chicken salad with almonds and pineapple, with lettuce and tomato, on a toasted croissant.",
+            "price": "$6.59"
+        }
+
+    ],
+    "hot sandwiches": [
+        {
+            "name": "Smokey Jack Panini",
+            "calories": "750",
+            "description": "Smoked turkey breast, bacon, jalapeño pepper jack, guacamole, Roma tomatoes, Thousand Island dressing. Pressed within olive oil-basted New Orleans French bread.",
+            "price": "$7.49"
+        },
+        {
+            "name": "Chicken Panini",
+            "calories": "700",
+            "description": "Grilled, 100% antibiotic-free chicken breast, provolone, fresh basil pesto, Roma tomatoes, organic spinach. Pressed within olive oil-basted New Orleans French bread.",
+            "price": "$7.69"
+        },
+        {
+            "name": "MeataBalla",
+            "calories": "1120",
+            "description": "Meatballs, Italian red sauce, provolone, toasted on New Orleans French bread. ",
+            "price": "$7.99"
+        }
+    ],
+    "desserts": [
+        {   "Fresh-Baked Incredible Cookie": 
+            [
+                {
+                    "type": "Sugar",
+                    "calories": "240"
+                },
+                {
+                    "type": "Cranberry Walnut Oatmeal",
+                    "calories": "300"
+            }   ,
+                {
+                    "type": "Chocolate Chip",
+                    "calories": "270"
+                },
+                {
+                    "type": "White Chocolate Macadamia Nut",
+                    "calories": "330"
+                }
+            ]
+        },
+        {
+            "name": "Udi's Gluten-Free Snickerdoodle",
+            "price": "$1.99"
+        },
+        {
+            "name": "Fudge-Nut Brownie",
+            "calories": "410",
+            "price": "$1.99"
+        },
+        {
+            "name": "Strawberry Shortcake",
+            "calories": "670",
+            "price": "$3.29"
+        },
+        {
+            "name": "Classic Cheesecake",
+            "calories": "530",
+            "price": "$3.29"
+        },
+        {
+            "name": "Strawberry-Topped Cheesecake",
+            "calories": "550",
+            "price": "$3.29"
+        },
+        {
+            "name": "Carrot Cake",
+            "calories": "530",
+            "price": "$3.29"
+        }
+
+    ],
+    "drinks": [
+        {
+            "name": "Fountain Drinks",
+            "price": "$1.99"
+        },
+        {
+            "name": "Fresh-Brewed Unsweetened Tea",
+            "price": "$1.99"
+        },
+        {
+            "name": "Fresh-Brewed Sweetened Tea",
+            "price": "$1.99"
+        },
+        {
+            "name": "Fresh-Brewed Black Currant Tea",
+            "price": "$1.99"
+        },
+        {
+            "name": "Simply Orange Juice",
+            "price": "$2.49"
+        },
+        {
+            "name": "Jason's Cane Sugar Sodas",
+            "price": "$2.19"
+        },
+        {
+            "name": "Organic Bottled Teas",
+            "price": "$2.19"
+        },
+        {
+            "name": "Hot Tea",
+            "price": "$1.29"
+        },
+        {
+            "name": "Organic Milks",
+            "price": "$1.29"
+        },
+        {
+            "name": "Fresh-brewed Coffee",
+            "price": "$1.99"
+        }
+    ]
+}
