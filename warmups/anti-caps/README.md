@@ -1,0 +1,1 @@
+This program takes a string and changes all upper and lower case letters to their opposite.
