@@ -6,33 +6,10 @@ var greeting = readline.keyIn("Hello, player! Press your spacebar to begin.")
 var name = readline.question('What name do you wish to be known by? ');
 
 console.log("Hello, " + name + "! Good luck on your quest!!");
-var playerTotalHP = 1000;
-
-//The console will ask the user to enter a "w" to walk
-var walk = readline.keyIn("Press 'w' to walk! " );
+var playerTotalHP = 500;
 
 toWalk();
 
-// Every time the player walks, a random algorithm will be run that determines if a wild enemy has appeared
-//var outcomes = ["No enemies yet! Still walking...", "Lucky you! Keep walking...", "The coast is clear. Continue walking...", 'enemy'];
-
-//var currentOutcome = "Start walking";
-
-function toWalk() {
-    var outcomes = ["No enemies yet! Still walking...", "Lucky you! Keep walking...", "The coast is clear. Continue walking...", 'enemy'];
-    var currentOutcome = "Start walking";
-    while (currentOutcome.includes("walking")) {
-        console.log(currentOutcome);
-
-        var outcome = Math.floor(Math.random() * 4);
-
-        currentOutcome = outcomes[outcome];
-}
-// If a Wild Enemy appears
-    console.log("Found an Enemy!");
-}
-
-    
 //Enemy generation
 // The enemy is random (can be chosen out of a minimum of 3 different enemy names)
 function determineType() {
@@ -60,7 +37,7 @@ function determineItem(type) {
     if (type === "Ancient Dragon") {
         return item = "dragon scale";
     } else if (type === "Prowler") {
-        return item= "prowler tooth";
+        return item = "prowler tooth";
     } else if (type === "Mighty Grunt") {
         return item = "grunt wing";
     }
@@ -73,41 +50,37 @@ function Enemy() {
 }
 
 
-var enemy = new Enemy();
-console.log(enemy);
-var enemyHP = enemy.hitPoints;
-var enemyType = enemy.type;
-var enemyItem = enemy.item;
-console.log(enemyHP);
-console.log(enemyType);
-console.log(enemyItem);
+var playerItems = "";
 
-//The user can decide to attack or run
-var choice = readline.question("You have come upon a " + enemyType + "! Do you want to attack or run? Enter 'a' or 'r': ");
-
-// If running, you will choose a random number between 1 and 2 - meaning a 50% chance of escaping
-
-if (choice === "r") {
-   var runChance = Math.floor(Math.random() * 2);
-    if (runChance === 0) {
-        console.log("Lucky you! You've escaped!");
-        console.log("Continue on your journey!");
-        toWalk();
-    } else {
-        console.log("Bad luck! You can't get away. Prepare to fight!")
-        fight(enemyType, enemyHP, enemyItem);
-    }
-} else if (choice === "a") {
-    console.log("Let's hope you've got what it takes!");
-    fight(enemyType, enemyHP, enemyItem);
-} else {
-    console.log("You don't follow instructions very well! Try again another time.");
-}
-
-var playerItems = [];
-
-function fight(enemyType, enemyHP, enemyItem) {
+function fight() {
     var playerHP = 0;
+    for (i = 0; i < 1; i++) {
+        var enemy = new Enemy();
+        var enemyType = enemy.type;
+        var enemyHP = enemy.hitPoints;
+        var enemyItem = enemy.item;
+    }
+    //The user can decide to attack or run
+    var choice = readline.question("You have come upon a " + enemyType + "! Do you want to attack or run? Enter 'a' or 'r': ");
+
+    // If running, the program will generate a random number between 1 and 2 - meaning a 50% chance of escaping
+
+    if (choice === "r") {
+        var runChance = Math.floor(Math.random() * 2);
+        if (runChance === 0) {
+            console.log("Lucky you! You've escaped!");
+            console.log("Continue on your journey!");
+            toWalk();
+        } else {
+            console.log("Bad luck! You can't get away. Prepare to fight!")
+        }
+    } else if (choice === "a") {
+        console.log("Let's hope you've got what it takes!");
+    } else {
+        console.log("You don't follow instructions very well! Try again another time.");
+        return;
+    };
+
     if (enemyType === "Ancient Dragon") {
         playerHP = Math.floor(Math.random() * (100 - 80 + 1)) + 80;
     } else if (enemyType === "Prowler") {
@@ -116,32 +89,58 @@ function fight(enemyType, enemyHP, enemyItem) {
         playerHP = Math.floor(Math.random() * (49 - 20 + 1)) + 20;
     };
     if (playerHP > enemyHP) {
-        playerItems.push(enemyItem);
-        playerNewHP = (enemyHP / 2);
-        console.log("You are the victor! You have gained " + playerNewHP + " HP! " + enemyItem + " has been added to your inventory! You live to play another day!!")
-        playerTotalHP = playerTotalHP + playerNewHP;
-    } else if(playerHP === enemyHP) {
+        playerItems += (enemyItem + ", ");
+        playerAddHP = playerHP - enemyHP;
+        console.log("You are the victor! You won with " + playerHP + " to the " + enemyType + "'s " + enemyHP + " hit points! You have gained " + playerAddHP + " HP! A " + enemyItem + " has been added to your inventory!")
+        playerTotalHP = playerTotalHP + playerAddHP;
+        console.log("You have " + playerTotalHP + " hit points left! Keep walking...")
+        toWalk();
+    } else if (playerHP === enemyHP) {
         console.log("It is a draw! You don't gain or lose anything. You simply walk away...")
         toWalk();
     } else {
+        playerTotalHP = playerTotalHP - enemyHP;
         console.log("You are a sorry excuse for a warrior! Your hit was only worth " + playerHP + " and the " + enemyType + " has beaten you with " + enemyHP + "!");
         if (playerTotalHP <= 0) {
             console.log("You have been summarily defeated! Your life is at an end.")
         } else {
-            console.log("You may have lost this battle, but you're still alive! Rally your courage and move forward.")
+            console.log("You may have lost this battle, but you're still alive! Rally your courage and move forward. You have " + playerTotalHP + " hit points still!")
             toWalk();
         }
     };
 }
 
 
-////
-////// Inventory 
-////// When the player kills enemies, they are awarded with items
-////// If the user enters 'Print' in the console, the console will print the players name, HP, and each item in their inventory
-////
-//var items = [];
-////var inventory = [name, playerTotalHP, [items]]
-////
-////if (userEnters = "Print") {
-////    console.log(inventory);
+// Every time the player walks, a random algorithm will be run that determines if a wild enemy has appeared
+//var outcomes = ["No enemies yet! Still walking...", "Lucky you! Keep walking...", "The coast is clear. Continue walking...", 'enemy'];
+
+//var currentOutcome = "Start walking";
+
+function toWalk() {
+    //The console will ask the user to enter a "w" to walk
+    var walk = readline.question("Press 'w' to walk or 'p' to print your info! ");
+    if (walk === "w") {
+        var outcomes = ["No enemies yet! Still walking...", "Lucky you! Keep walking...", "The coast is clear. Continue walking...", 'enemy'];
+        var currentOutcome = "Start walking";
+        while (currentOutcome.includes("walking")) {
+            console.log(currentOutcome);
+
+            var outcome = Math.floor(Math.random() * 4);
+
+            currentOutcome = outcomes[outcome];
+        }
+        // If a Wild Enemy appears
+        console.log("Found an Enemy!");
+        fight();
+    } else if (walk === "p") {
+        console.log("Player: " + name + " HP: " + playerTotalHP + " Your items: " + playerItems);
+        toWalk();
+    } else {
+        console.log("That isn't an option. Try again!");
+        toWalk();
+    }
+}
+
+// Inventory 
+// When the player kills enemies, they are awarded with items
+// If the user enters 'Print' in the console, the console will print the players name, HP, and each item in their inventory
