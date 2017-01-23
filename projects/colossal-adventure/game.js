@@ -8,7 +8,9 @@ var name = readline.question('What name do you wish to be known by? ');
 console.log("Hello, " + name + "! Good luck on your quest!!");
 var playerTotalHP = 500;
 
-toWalk();
+
+var playerItems = "";
+toWalk(playerItems);
 
 //Enemy generation
 // The enemy is random (can be chosen out of a minimum of 3 different enemy names)
@@ -50,10 +52,8 @@ function Enemy() {
 }
 
 
-var playerItems = "";
-
 function fight() {
-    var playerHP = 0;
+    var currentPlayerHP = 0;
     for (i = 0; i < 1; i++) {
         var enemy = new Enemy();
         var enemyType = enemy.type;
@@ -70,42 +70,43 @@ function fight() {
         if (runChance === 0) {
             console.log("Lucky you! You've escaped!");
             console.log("Continue on your journey!");
-            toWalk();
+            toWalk(playerItems);
         } else {
-            console.log("Bad luck! You can't get away. Prepare to fight!")
+            console.log("Bad luck! You can't get away. Prepare to fight!");
         }
-    } else if (choice === "a") {
-        console.log("Let's hope you've got what it takes!");
     } else {
-        console.log("You don't follow instructions very well! Try again another time.");
-        return;
-    };
+        console.log("Let's hope you've got what it takes!");
+    }
 
     if (enemyType === "Ancient Dragon") {
-        playerHP = Math.floor(Math.random() * (100 - 80 + 1)) + 80;
+        currentPlayerHP = Math.floor(Math.random() * (100 - 80 + 1)) + 80;
     } else if (enemyType === "Prowler") {
-        playerHP = Math.floor(Math.random() * (79 - 50 + 1)) + 50;
+        currentPlayerHP = Math.floor(Math.random() * (79 - 50 + 1)) + 50;
     } else if (enemyType === "Mighty Grunt") {
-        playerHP = Math.floor(Math.random() * (49 - 20 + 1)) + 20;
+        currentPlayerHP = Math.floor(Math.random() * (49 - 20 + 1)) + 20;
     };
-    if (playerHP > enemyHP) {
-        playerItems += (enemyItem + ", ");
-        playerAddHP = playerHP - enemyHP;
-        console.log("You are the victor! You won with " + playerHP + " to the " + enemyType + "'s " + enemyHP + " hit points! You have gained " + playerAddHP + " HP! A " + enemyItem + " has been added to your inventory!")
+    if (currentPlayerHP > enemyHP) {
+        if (playerItems === "") {
+            playerItems = enemyItem;
+        } else {
+            playerItems += (", " + enemyItem);
+        }
+        playerAddHP = currentPlayerHP - enemyHP;
+        console.log("You are the victor! You won with " + currentPlayerHP + " to the " + enemyType + "'s " + enemyHP + " hit points! You have gained " + playerAddHP + " HP! A " + enemyItem + " has been added to your inventory!")
         playerTotalHP = playerTotalHP + playerAddHP;
         console.log("You have " + playerTotalHP + " hit points left! Keep walking...")
-        toWalk();
-    } else if (playerHP === enemyHP) {
+        toWalk(playerItems);
+    } else if (currentPlayerHP === enemyHP) {
         console.log("It is a draw! You don't gain or lose anything. You simply walk away...")
-        toWalk();
+        toWalk(playerItems);
     } else {
         playerTotalHP = playerTotalHP - enemyHP;
-        console.log("You are a sorry excuse for a warrior! Your hit was only worth " + playerHP + " and the " + enemyType + " has beaten you with " + enemyHP + "!");
+        console.log("You are a sorry excuse for a warrior! Your hit was only worth " + currentPlayerHP + " and the " + enemyType + " has beaten you with " + enemyHP + "!");
         if (playerTotalHP <= 0) {
             console.log("You have been summarily defeated! Your life is at an end.")
         } else {
             console.log("You may have lost this battle, but you're still alive! Rally your courage and move forward. You have " + playerTotalHP + " hit points still!")
-            toWalk();
+            toWalk(playerItems);
         }
     };
 }
@@ -116,7 +117,7 @@ function fight() {
 
 //var currentOutcome = "Start walking";
 
-function toWalk() {
+function toWalk(playerItems) {
     //The console will ask the user to enter a "w" to walk
     var walk = readline.question("Press 'w' to walk or 'p' to print your info! ");
     if (walk === "w") {
