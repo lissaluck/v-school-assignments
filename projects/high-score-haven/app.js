@@ -33,31 +33,3 @@ $(document).ready(function () {
         $("table tbody").append(markup);
     });
 });
-
-
-
-
-function toWalk(playerItems) {
-    //The console will ask the user to enter a "w" to walk
-    var walk = readline.question("Press 'w' to walk or 'p' to print your info! ");
-    if (walk === "w") {
-        var outcomes = ["No enemies yet! Still walking...", "Lucky you! Keep walking...", "The coast is clear. Continue walking...", 'enemy'];
-        var currentOutcome = "Start walking";
-        while (currentOutcome.includes("walking")) {
-            console.log(currentOutcome);
-
-            var outcome = Math.floor(Math.random() * 4);
-
-            currentOutcome = outcomes[outcome];
-        }
-        // If a Wild Enemy appears
-        console.log("Found an Enemy!");
-        fight();
-    } else if (walk === "p") {
-        console.log("Player: " + name + " HP: " + playerTotalHP + " Your items: " + playerItems);
-        toWalk();
-    } else {
-        console.log("That isn't an option. Try again!");
-        toWalk();
-    }
-}
