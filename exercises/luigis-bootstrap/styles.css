@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "SuperMario256";
+    src: url(../SuperMario256.ttf);
+}
+
+#header {
+    font-family: "SuperMario256";
+    background-color: #FFDA09;
+    color: #EB1F22;
+}
+
+#luigi-pic {
+    background-color: #EB1F22;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#about {
+    color: #EB1F22;
+}
+
+#footer {
+    background-color: #FFDA09;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#mushroom {
+    max-height: 75px;
+}
+
+#about h3 {
+    font-family: "SuperMario256";
+}
+
+#about p {
+    font-family: monospace;
+}
