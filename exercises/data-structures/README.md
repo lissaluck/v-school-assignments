@@ -1,1 +1,1 @@
-This was an exercise is creating objects and giving them properties of differetn data types.
+This was an exercise is creating objects and giving them properties of different data types.
