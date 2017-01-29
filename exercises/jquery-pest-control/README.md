@@ -1,0 +1,1 @@
+This is a refactoring of a previous project to use JQuery instead of vanilla JavaScript.

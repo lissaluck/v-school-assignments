@@ -1,0 +1,150 @@
+@font-face {
+    font-family: '../fonts/New-Super-Mario-Font-U';
+    src: url('../fonts/New-Super-Mario-Font-U.ttf.woff') format('woff'), url('../fonts/New-Super-Mario-Font-U.ttf.svg#../fonts/New-Super-Mario-Font-U') format('svg'), url('../fonts/New-Super-Mario-Font-U.ttf.eot'), url('../fonts/New-Super-Mario-Font-U.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/e9/c1/bb/e9c1bbcfd2914ba376901a9cf5782d2f.jpg);
+    background-position: right top;
+    background-size: 100%;
+}
+
+header {
+    background-color: white;
+    padding-left: 25px;
+}
+
+.btn {
+    background: red;
+    background-image: -webkit-linear-gradient(top, red, crimson);
+    background-image: -moz-linear-gradient(top, red, crimson);
+    background-image: -ms-linear-gradient(top, red, crimson);
+    background-image: -o-linear-gradient(top, red, crimson);
+    background-image: linear-gradient(to bottom, red, crimson);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 0.75em;
+    padding: 5px 25px 5px 25px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.btn:hover {
+    background: crimson;
+    background-image: -webkit-linear-gradient(top, crimson, red);
+    background-image: -moz-linear-gradient(top, crimson, red);
+    background-image: -ms-linear-gradient(top, crimson, red);
+    background-image: -o-linear-gradient(top, crimson, red);
+    background-image: linear-gradient(to bottom, crimson, red);
+    text-decoration: none;
+}
+
+.message {
+    font-family: sans-serif;
+    background-color: white;
+    color: red;
+    padding: 5px 5px 5px 25px;
+    opacity: 0.75;
+    font-size: 0.9em;
+}
+
+h1 {
+    display: inline;
+    font-size: 4em;
+    background: -webkit-linear-gradient(white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: '../fonts/New-Super-Mario-Font-U', Arial;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    opacity: 0.85;
+    background-color: white;
+    color: red;
+    text-align: center;
+}
+
+th {
+    background-color: red;
+    color: white;
+}
+
+td {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.pest-name {
+    font-size: 1.5em;
+}
+
+.total {
+    text-align: right;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+.footer_text {
+    width: 30%;
+    padding: 5px 10px 5px 10px;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        display: inline;
+        font-size: 2.25em;
+        background: -webkit-linear-gradient(white, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: '../fonts/New-Super-Mario-Font-U', Arial;
+    }
+    .btn {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    table {
+        width: 100%;
+        font-size: 1.1em;
+        font-family: sans-serif;
+        opacity: 0.85;
+        background-color: white;
+        color: red;
+        text-align: center;
+    }
+    .pest-name {
+        font-size: 1em;
+    }
+    .footer_text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+}
