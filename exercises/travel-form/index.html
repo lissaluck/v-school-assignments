@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstName" name="firstname" >
+        <br>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastName" name="lastname">
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br>
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" id="gender" name="gender" value="male" checked> Male
+        <br>
+        <input type="radio" id="gender" name="gender" value="female"> Female
+        <br>
+        <input type="radio" id="gender" name="gender" value="other"> Other
+        <br> Destinations:
+        <!--        <br>-->
+        <select id="destination" name="destinations">
+            <option value="Hawaii">Hawaii</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Bali">Bali</option>
+            <option value="Greece">Greece</option>
+            <option value="The Florida Keys">The Florida Keys</option>
+        </select>
+        <br> Dietary Restrictions:
+        <br>
+        <input type="checkbox" name="dietaryRestrictions" value="Vegan" id="vegan">
+        <label for="vegan"> Vegan</label>
+        <br>
+        <input type="checkbox" name="dietaryRestrictions" value="Kosher" id="kosher">
+        <label for="kosher"> Kosher</label>
+        <br>
+        <input type="checkbox" name="dietaryRestrictions" value="Gluten-free" id="gluten-free">
+        <label for="gluten-free"> Gluten-Free</label>
+        <br>
+        <button type="button" id="submitForm">Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>
