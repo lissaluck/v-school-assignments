@@ -1,0 +1,57 @@
+body {
+    background-image: url(http://www.citizentekk.com/wp-content/uploads/2017/01/controllers.jpg);
+    background-size: contain;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 1.8em;
+    color: lightgray;
+    background-color: black;
+    padding: 10px;
+}
+
+form {
+    margin: 20px 0;
+    font-family: sans-serif;
+    padding: 15px;
+    line-height: 1.75em;
+    background-image: url(../hexabump.png);
+    color: white;
+}
+
+button {
+    padding: 8px;
+    border-radius: 0px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    border: 1px solid gray;
+}
+
+table th,
+table td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-size: 1.25em;
+    background-color: lightgray;
+    color: #574C9A;
+    border: 2px solid black;
+}
+
+td {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+#name,
+#game {
+    width: 50%;
+}
