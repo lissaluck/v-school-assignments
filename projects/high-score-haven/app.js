@@ -20,14 +20,12 @@ $(document).ready(function () {
         var score = $("#score").val();
         var unit = document.getElementById('unit');
         var unitStr = unit.options[unit.selectedIndex].value;
-        var checked = $("input[name=trash]:checked");
+        var checked = $("#trash").prop("checked");
         if (checked) {
-            var i = Math.floor(Math.random() * 6);
+            var i = Math.floor(Math.random() * 5);
             var trash = trashTalk[i];
-        }
-        var dietary = [];
-        for (var i = 0; i < checked.length; i++) {
-            dietary.push(checked[i].value);
+        } else {
+            var trash = "";
         }
         var markup = "<tr><td>" + name + "</td><td>" + game + "</td><td>" + score + " " + unitStr + "</td><td>" + date + "</td><td>" + trash + "</td></tr>";
         $("table tbody").append(markup);
