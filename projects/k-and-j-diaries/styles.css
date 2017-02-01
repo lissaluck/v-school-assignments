@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/BebasNeue Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bebas-bold';
+    src: url('fonts/BebasNeue Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bebas-book';
+    src: url('fonts/BebasNeue Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bebas-light';
+    src: url('fonts/BebasNeue Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bebas-thin';
+    src: url('fonts/BebasNeue Thin.ttf') format('truetype');
+}
+
+body {
+    font-family: 'avenir', Helvetica, sans-serif;
+    font-weight: 400;
+    color: #545454;
+    line-height: 20px;
+}
+
+.carousel {
+    width: 100%;
+    height: auto;
+}
+
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.email {
+    background-color: #F3C3AC;
+}
+
+.input-group-addon {
+    color: #ff0000;
+    background-color: #ffffff;
+}
+
+h2.date {
+    font-family: 'avenir', Helvetica, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h2.date:before,
+h2.date:after {
+    background-color: #999999;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    max-width: 80px;
+}
+
+h2.date:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2.date:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.category {
+    color: #999999;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+h1.title {
+    font-family: bebas, sans-serif;
+    ;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: black;
+}
+
+h1.title:hover {
+    color: #F3C3AC;
+}
+
+.article-image {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+p {
+    text-indent: 5px;
+    margin-bottom: 0px;
+}
+
+button {
+    background-color: white;
+    font-family: bebas-light, sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #9B9B9B;
+    border: 1px solid #CCCCCC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 32px auto 0;
+    width: 106px;
+    display: block;
+    letter-spacing: 0.1em;
+}
+
+button:hover {
+    background-color: #9B9B9B;
+    color: white;
+}
+
+.read-more {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.fa {
+    color: #F3C3AC;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.form-control:focus {
+    border-color: #999;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none);
+}
+
+.input-group-addon {
+    color: black;
+    border-radius: 0px;
+    border: 0px;
+}
+
+.input-group-addon .fa {
+    color: black;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.input-group-addon:hover .fa {
+    color: #F3C3AC;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.comment-count {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.comment-count:hover {
+    color: #F3C3AC;
+}
+
+h3.related-header {
+    font-family: bebas-light, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #999999;
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h3.related-header:before,
+h3.related-header:after {
+    background-color: #999999;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    max-width: 90%;
+}
+
+h3.related-header:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h3.related-header:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
