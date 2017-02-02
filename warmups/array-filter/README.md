@@ -1,0 +1,1 @@
+This is an exercise in creating a prototype function that behaves the same as Angular's built-in array filter.
