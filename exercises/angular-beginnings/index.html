@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BeginApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Beginnings</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+</head>
+
+<body ng-controller="AppController">
+
+    <h1>What is your favorite color?</h1>
+    <input type="text" placeholder="Your favorite color" ng-model="color">
+    <h2 ng-style="{'color': color}">{{color}}</h2>
+    <h2 ng-style="{'color': color, 'background-color': 'black', 'line-height': '2em'}">{{color}}</h2>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
