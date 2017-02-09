@@ -1,0 +1,1 @@
+This is a program to identify palindromes. I added regex to make it ignore spaces and punctuation.
