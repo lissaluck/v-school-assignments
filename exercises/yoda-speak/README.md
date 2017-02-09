@@ -1,0 +1,1 @@
+This was an exercise in using an API with Angular. I learned how to add configuration information and add error handling.
