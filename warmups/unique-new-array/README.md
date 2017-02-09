@@ -1,0 +1,1 @@
+This is an exercise which combines two arrays and returns variables unique to both arrays.
