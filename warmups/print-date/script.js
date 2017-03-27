@@ -1,11 +1,42 @@
-function getDay() {
-    var today = new Date();
-    var day = today.getDay();
-    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    document.getElementById("day-of-week").textContent = "Today is: " + days[day];
-    var time = today.getTime();
-    var currentTime = new Date(time);
-    document.getElementById("time-of-day").textContent = "The current time is: " + currentTime;
-}
+function currentDate() {
+    var date = new Date();
+    var day = 0;
+    var hour = date.getHours();
+    var amOrPm = "A.M.";
+    var time = "";
 
-getDay();
+    switch (date.getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+    }
+    if (hour === 12) {
+        amOrPm = "P.M.";
+    } else if (hour > 12) {
+        amOrPm = "P.M.";
+        hour -= 12;
+    } else if (hour === 0) {
+        hour = 12;
+    }
+    time = hour.toString() + ":" + date.getMinutes().toString() + ":" + date.getSeconds().toString() + " " + amOrPm;
+    console.log("Today is " + day + " and the time is " + time);
+}
+currentDate();
