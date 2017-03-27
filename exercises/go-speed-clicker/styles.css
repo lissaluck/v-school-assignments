@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: gray;
+    letter-spacing: 5px;
+    font-size: 46px;
+    border-bottom: solid black 2px;
+}
+
+.box {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-color: dodgerblue;
+    font-size: 1.5em;
+}
+
+#counter {
+    font-size: 2em;
+}
