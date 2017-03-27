@@ -1,13 +1,14 @@
-/*
-function outputString(inputString) {
-    for (var i = 0; i <= inputString.length; i++) {
-        console.log(inputString[i]);
+console.log("\n ** Output letters of a string individually **");
+
+function letters(string) {
+    for (var i = 0; i < string.length; i ++) {
+        console.log(string[i]);
     }
 }
 
-outputString("Melissa");
-*/
+letters("Melissa");
 
+console.log("\n ** Find the position of a letter in a string. If the letter isn't found, tell the user so. **");
 
 function findLetter(str, char) {
     for (var i = 0; i <= str.length; i++) {
@@ -20,23 +21,25 @@ function findLetter(str, char) {
     }
 }
 
-
 findLetter("Melissa", "a");
+findLetter("Melissa", "t");
 
-
+console.log("\n ** Find the number 42 within an array. If the number 42 is not found, tell the user. **");
 
 function findNumber(numberArray) {
-    for (var i = 0; i <= numberArray.length; i++) {
+    for (var i = 0; i < numberArray.length; i++) {
         if (numberArray[i] === 42) {
-            console.log[i];
-            break;
-        } else if (i === numberArray.length) {
-            console.log("42 was not found");
+            console.log("42 is at index " + i);
+            return;
         }
     }
+    console.log("42 was not found");
 }
 
-findNumber([1, 2, 3, 4, 5, 42, 43, 56])
+findNumber([1, 2, 3, 4, 5, 42, 43, 56]);
+findNumber([1, 2, 3, 4, 5, 43, 56]);
+
+console.log("\n ** Accepts ten numbers in an array and prints out the smallest. **")
 
 function lowest(arrayTen) {
     var lowest = arrayTen[0];
