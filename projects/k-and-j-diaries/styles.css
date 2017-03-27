@@ -30,11 +30,59 @@ body {
     line-height: 20px;
 }
 
-.carousel {
-    width: 100%;
-    height: auto;
+.navbar {
+    height: 95px;
 }
 
+.nav {
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav a {
+    color: black;
+}
+
+.navbar-form {
+    border: 1px solid #999;
+    width: 100%;
+    font-style: italic;
+}
+
+.dropdown-menu .sub-menu {
+    font-family: 'avenir', Helvetica, sans-serif;
+    color: black;
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    margin-top: 30px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    text-align: center;
+    background-color: #F3C3AC;
+}
+
+.homepage-header {
+    max-height: 780px;
+}
+
+.carousel {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    margin-top: -60px;
+    z-index: -1;
+}
 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
@@ -63,11 +111,17 @@ body {
 
 .email {
     background-color: #F3C3AC;
+    position: relative;
+    margin-top: -65px;
 }
 
 .input-group-addon {
     color: #ff0000;
     background-color: #ffffff;
+}
+
+.left-side {
+    width: 100%;
 }
 
 h2.date {
@@ -246,4 +300,37 @@ h3.related-header:before {
 h3.related-header:after {
     left: 0.5em;
     margin-right: -50%;
+}
+
+.sidebar {
+    width: 100%;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.sidebar-header {
+    font-family: bebas-light;
+    font-size: 21px;
+    border: 1px solid #999;
+    
+}
+
+.sidebar .fa
+#sidebar > div > div > ul > li {
+    display: inline-block;
+}
+
+.ig-footer {
+    text-align: center;
+    font-family: bebas-light;
+    font-size: 1.2em;
+    background-image: url(https://scontent.cdninstagram.com/t51.2885-15/e35/p320x320/16123026_1866538…7112526309556224_n.jpg?ig_cache_key=MTQzMzc3MDgxMDExMTY4MDk3NQ%253D%253D.2);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 144px;
+    opacity: 1;
+    display: block;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
