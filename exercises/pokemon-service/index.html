@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="promisesApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Services Beginnings</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+
+<body ng-controller="MainController">
+    
+    <h2>My Favorite Pok&eacute;mon</h2>  
+    <input type="text" ng-model="pokemonName">
+    <button type="submit" ng-click="addPokemon(pokemonName)">Add Pokemon</button>
+    <button type="submit" ng-click="removePokemon(pokemonName)">Remove</button>
+
+    <div>
+        <ul>
+            <li ng-repeat="pokemon in favePokemon">
+                {{ pokemon }}
+            </li>
+        </ul>
+    </div>
+
+<script src="app.js"></script>
+<script src="PokeService.js"></script>
+</body>
+
+</html>

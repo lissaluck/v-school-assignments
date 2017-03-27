@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    font-size: 1.25em;
+    background-color: yellow;
+    color: black;
+}
+
+ul {
+    list-style-image: url(https://www.psxhax.com/styles/default/xenforo/smilies/pokeball.png);
+}
+
+input {
+    font-size: 0.75em;
+}
+
+button {
+    font-size: 0.65em;
+    background-color: black;
+    color: yellow;
+    border: px solid red;
+}
