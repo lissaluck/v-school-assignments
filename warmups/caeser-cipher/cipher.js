@@ -20,6 +20,7 @@ function caesarCipher(input, shift) {
 
 console.log(caesarCipher(input, shift));
 
+
 /* Bob's solution */
 //console.log(alphabet[alphabet.indexOf(input[1]) ]);
 
