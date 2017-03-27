@@ -7,16 +7,6 @@ function countCode(string) {
     } console.log(codeCounter);
 }
 
-// Can this be done with Index??
-function countCode(string) {
-    count = 0;
-    beginningC = (string.indexOf("c"));
-//    console.log(beginningC);
-    if (string[beginningC + 1] === "o" && string[beginningC + 3] === "e") {
-        count++;
-    }
-}
-
 countCode("aaacodebbb"); // -> 1 
 countCode("codexxcode"); // -> 2 
 countCode("cozexxcope"); // -> 2
