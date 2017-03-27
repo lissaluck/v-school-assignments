@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RoutingApp">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Colorado - My Favorite State</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="container">
+    <header class="row">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Colorful Colorado</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li><a href="#/whyilove">Why I Love Colorado</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div ng-view></div>
+    </section>
+
+    <footer class="row text-right">&copy; 2017 Melissa Luckett</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/about/about.js"></script>
+    <script src="components/whyilove/whyilove.js"></script>
+</body>
+
+</html>
