@@ -1,0 +1,11 @@
+body {
+    font-size: 5em;
+}
+
+#blue-count {
+    color: blue;
+}
+
+#red-count {
+    color: red;
+}

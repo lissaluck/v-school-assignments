@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mighty Clicker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body ng-controller="MainController">
+
+    <div class="row">
+        <h2 class="col-sm-8 col-md-6 col-xl-4 text-center">Mighty Clicker</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-md-3 col-xl-2 text-center">
+            <div id="blue-count" ng-model="blueCounter">{{ blueCounter }}</div>
+            <input type="image" name="blue-button" src="images/blue-button-for-web.jpg" ng-click="addBlue(blueCounter, redCounter)">
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 text-center">
+            <div id="red-count" ng-model="redCounter">{{ redCounter }}</div>
+            <input type="image" name="red-button" src="images/red-button-for-web.jpg" ng-click="addRed(redCounter, blueCounter)">
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="services/BlueService.js"></script>
+    <script src="services/RedService.js"></script>
+
+</body>
+
+</html>
