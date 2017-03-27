@@ -3,7 +3,7 @@ var shopper = {
     lastName: "Brooks",
     shopperCardNum: 400051698,
     isMember: true,
-    greetFunc: function() {
+    greetFunc: function () {
         console.log("Hello valued customer!");
     },
     groceryCart: [
@@ -18,7 +18,7 @@ var shopper = {
             type: "Skim",
             category: "dairy",
             price: 2.29,
-            organic: "false"
+            organic: false
         },
         {
             itemName: "bread",
@@ -32,11 +32,14 @@ var shopper = {
             cageFree: true
         }
     ],
-    totalPrice: function() {
+    totalPrice: function () {
         var totalPrice = 0;
-        for (var i = 0; i < this.groceryCart.length; i++) {totalPrice += this.groceryCart[i].price;
-                                                          }
-                                                          }
+        for (var i = 0; i < this.groceryCart.length; i++) {
+            totalPrice += this.groceryCart[i].price;
+        }
+        return totalPrice;
+    }
 }
 
 shopper.greetFunc();
+console.log(shopper.totalPrice());
