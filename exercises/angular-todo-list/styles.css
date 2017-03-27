@@ -1,0 +1,24 @@
+h1 {
+    margin-bottom: 20px;
+}
+
+.completed-todo {
+    text-decoration: line-through;
+    color: #777;
+    font-style: italic;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: skyblue;
+    color: navy;
+}
+
+form input {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
