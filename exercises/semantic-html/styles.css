@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     left: 0px;
     background-color: cornflowerblue;
     color: white;
@@ -16,17 +16,18 @@ header {
     height: 85px;
     width: 100%;
     vertical-align: middle;
+    z-index: 4;
 }
 
 nav {
-    position: absolute;
-    top: 80px;
+    position: fixed;
+    top: 90px;
     left: 0px;
+    bottom: 65px;
     padding-left: 75px;
     background-color: white;
     font-family: Verdana, sans-serif;
     font-size: 1.15em;
-    height: 100%;
     width: 145px;
 }
 
@@ -39,10 +40,18 @@ nav a:hover {
     color: cornflowerblue;
 }
 
-main {
+.left {
+    position: fixed;
+    left: 0px;
+    padding: 10px;
+    top: 100px;  
+}
+
+.photos {
     position: absolute;
     left: 165px;
     top: 90px;
+    margin-bottom: 50px;
     height: 100%;
 }
 
@@ -51,28 +60,27 @@ img {
     height: 300px;
     padding: 15px;
     object-fit: fill;
+
 }
 
 footer {
     position: fixed;
+    display: block;
     bottom: 0;
     background-color: #555555;
     color: white;
     height: 50px;
+    line-height: 15px;
     text-align: center;
     font-family: Verdana, sans-serif;
     font-size: 0.75em;
     width: 100%;
+    margin-top: 10px;
 }
 
 footer p {
     display: inline-block;
+    vertical-align: middle;
     width: 25%;
 }
 
-.left {
-    position: absolute;
-    left: 0px;
-    padding: 10px;
-    top: 100px;  
-}
