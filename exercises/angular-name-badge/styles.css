@@ -1,0 +1,66 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.form-box {
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 55px;
+}
+
+input {
+    border: 1px solid #999;
+    width: 100%;
+    margin: 7px 0;
+    padding: 3px;
+}
+
+textarea {
+    border: 1px solid #999;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.boxsizingBorder {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.badge-header {
+    background-color: #999;
+    color: white;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+#badge > div {
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: mediumseagreen;
+}
+
+#badge > div > div > div > p {
+    padding-left: 15px;
+    line-height: 2.5em;
+    background-color: white;
+    color: #999;
+    margin-bottom: 15px;
+}
