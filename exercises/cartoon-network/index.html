@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="" cartoonApp>
+<head>
+    <meta charset="UTF-8">
+    <title>Cartoon App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+</head>
+<body ng-controller="CartoonController">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="text-center">Cartoon Network</h1>
+
+            <form>
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <input type="text" class="form-control" name="title" placeholder="Title"
+                               ng-model="cartoon.title"/>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="image"
+                               placeholder="Image URL 'Starts with http://" ng-model="cartoon.img"/>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea class="form-control" name="description" id="description" cols="40" rows="1" placeholder="Describe the cartoon" ng-model="cartoon.description"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-info center-block" ng-click="addCartoon()">Add Cartoon</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+            <section class="row" id="cartoons">
+                <div class="col-sm-6 col-md-4" ng-repeat="cartoon in cartoons">
+                    <h2>{{ cartoon.title }}</h2>
+                    <img class="img-responsive" ng-src="{{ cartoon.img }}" alt="photo">
+                    <h4>{{ cartoon.description }}</h4>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+<script src="services/CartoonService.js"></script>
+</body>
+</html>

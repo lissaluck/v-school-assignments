@@ -1,0 +1,19 @@
+.h1, h1 {
+    font-family: Tahoma;
+    color: gray;
+}
+
+form {
+    background-color: hotpink;
+    padding: 50px 35px;
+    margin: 20px 1opx;
+    align-content: center;
+}
+
+input {
+    margin: 15px 5px;
+}
+
+textarea {
+    margin: 15px 5px;
+}
