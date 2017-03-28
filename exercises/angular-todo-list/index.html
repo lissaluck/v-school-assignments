@@ -9,10 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
 </head>
 
-<body ng-controller="MainController" class="container">
+<body ng-controller="MainController">
+<div class="container">
     <div class="row">
         <h1 class="text-center">My Todo List</h1>
-        
+
         <div class="col-xs-10 col-xs-offset-1 col-sm-6">
             <form>
                 <div class="form-group">
@@ -27,8 +28,8 @@
                 </button>
             </form>
         </div>
-        
-                
+
+
         <div class="col-xs-10 col-xs-offset-1 col-sm-6">
             <div ng-repeat="todo in todoList track by $index">
                 <div class="form-group">
@@ -37,22 +38,27 @@
                     </div>
                 </div>
                 <h2 ng-class="{'completed-todo': todo.completed}" ng-hide="todo.editing">{{ todo.title }}</h2>
-                <div class="form-group" ng-show="todo.editing" >
+                <div class="form-group" ng-show="todo.editing">
                     <input type="text" ng-model="todo.title" class="form-control">
                 </div>
                 <p ng-class="{'completed-todo': todo.completed}" ng-hide="todo.editing">{{ todo.description }}</p>
                 <div class="form-group" ng-show="todo.editing">
                     <input type="text" ng-model="todo.description" class="form-control">
                 </div>
-                <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="deleteItem(todo._id, $index)"></button>
-                <button ng-hide="todo.editing" class="btn btn-warning glyphicon glyphicon-pencil" ng-click="todo.editing = !todo.editing"></button>
-                <button ng-show="todo.editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="updateTodo(todo)"></button>
+                <button class="btn btn-danger glyphicon glyphicon-trash"
+                        ng-click="deleteItem(todo._id, $index)"></button>
+                <button ng-hide="todo.editing" class="btn btn-warning glyphicon glyphicon-pencil"
+                        ng-click="todo.editing = !todo.editing"></button>
+                <button ng-show="todo.editing" class="btn btn-success glyphicon glyphicon-floppy-disk"
+                        ng-click="updateTodo(todo)"></button>
             </div>
         </div>
-        
+
     </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
-    <script src="app.js"></script>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
