@@ -1,0 +1,25 @@
+body {
+    background-image: url(symphony.png);
+}
+
+.form-control {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Comic Sans', fantasy;
+    color: blue;
+}
+
+input {
+    width: 50%;
+}
+
+textarea {
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
